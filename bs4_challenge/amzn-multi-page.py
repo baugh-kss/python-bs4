@@ -29,13 +29,13 @@ def get_title(soup):
 def get_price(soup):
 
     try:
-        price = soup.find('span', class_='a-offscreen').string.strip()
+        price = soup.find('span', class_='priceblock_ourprice').string.strip()
 
     except AttributeError:
 
         try:
             # If there is some deal price
-            price = soup.find("span", attrs={'id':'a-offscreen'}).string.strip()
+            price = soup.find("span", attrs={'id':'priceblock_ourprice'}).string.strip()
 
         except:        
             price = ""    
