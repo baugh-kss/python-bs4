@@ -24,4 +24,3 @@ This could include, but is not limited to:
    or in python for further processing
  - Graphing the data
  - Using a macine learning library with the data
- - Or?
